@@ -1,0 +1,41 @@
+<form action="process_booking.php" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required><br><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="phone">Phone Number:</label>
+  <input type="tel" id="phone" name="phone" required><br><br>
+
+  <label for="date">Pickup Date:</label>
+  <input type="date" id="date" name="date" required><br><br>
+
+  <label for="time">Pickup Time:</label>
+  <input type="time" id="time" name="time" required><br><br>
+
+  <label for="duration">Duration:</label>
+  <select id="duration" name="duration"><br>
+    <option value="1">1 Hour</option>
+    <option value="2">2 Hours</option>
+    <option value="3">3 Hours</option>
+    <option value="4">4 Hours</option><br>
+  </select><br><br>
+
+  <label for="bike-type">Bike Type:</label><br>
+  <input type="radio" id="mountain-bike" name="bike-type" value="mountain-bike" checked>
+  <label for="mountain-bike">Mountain Bike</label><br>
+  <input type="radio" id="road-bike" name="bike-type" value="road-bike">
+  <label for="road-bike">Road Bike</label><br><br>
+
+  <label for="extras">Extras:</label><br>
+  <input type="checkbox" id="helmet" name="extras[]" value="helmet">
+  <label for="helmet">Helmet</label><br><br>
+  <input type="checkbox" id="lock" name="extras[]" value="lock">
+  <label for="lock">Lock</label><br><br>
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea><br><br>
+
+  <input type="submit" value="Book Now">
+</form>
