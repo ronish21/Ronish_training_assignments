@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title> assignment 2 </title>
+</head>
+<body>
+    <h4>date</h4>
+<script>
+
+let daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+let date = new Date();
+
+let day = daysOfWeek[date.getDay()];
+let hour = date.getHours();
+let minute = date.getMinutes();
+let second = date.getSeconds();
+let period = (hour >= 12) ? 'PM' : 'AM';
+
+// Convert hour to 12-hour format
+hour = (hour > 12) ? hour - 12 : hour;
+if (hour === 0) {
+  hour = 12;
+}
+
+let time = hour + ' ' + period + ' : ' + minute + ' : ' + second;
+
+alert('Today is: ' + day + '\nCurrent time is: ' + time);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title> assignment 2 </title>
+</head>
+<body>
+    <h4>current date</h4>
+<script>
+
+
+let today = new Date();
+
+let dd = today.getDate();
+let mm = today.getMonth() + 1; // January is 0
+let yyyy = today.getFullYear();
+
+// Pad day and month with leading zeros if needed
+dd = (dd < 10) ? '0' + dd : dd;
+mm = (mm < 10) ? '0' + mm : mm;
+
+// Choose format (mm-dd-yyyy, mm/dd/yyyy, dd-mm-yyyy, dd/mm/yyyy)
+let format = 'mm-dd-yyyy';
+
+if (format === 'mm-dd-yyyy') {
+  alert(mm + '-' + dd + '-' + yyyy);
+} else if (format === 'mm/dd/yyyy') {
+  alert(mm + '/' + dd + '/' + yyyy);
+} else if (format === 'dd-mm-yyyy') {
+  alert(dd + '-' + mm + '-' + yyyy);
+} else if (format === 'dd/mm/yyyy') {
+  alert(dd + '/' + mm + '/' + yyyy);
+} else {
+  alert('Invalid format!');
+}
+
+</script>
+</body>
+</html>

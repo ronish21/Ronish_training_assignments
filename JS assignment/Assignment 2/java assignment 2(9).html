@@ -1,0 +1,36 @@
+<html>
+<head>
+	<title> assignment 2 </title>
+</head>
+<body>
+    <h4>calculate</h4>
+<script>
+
+
+
+// Get the current date
+const today = new Date();
+
+// Get the current year
+const currentYear = today.getFullYear();
+
+// Get the next Christmas date
+const nextChristmas = new Date(currentYear, 11, 25);
+
+// If Christmas has passed this year, use next year's Christmas date
+if (today > nextChristmas) {
+  nextChristmas.setFullYear(currentYear + 1);
+}
+
+// Calculate the number of days until Christmas
+const oneDay = 24 * 60 * 60 * 1000; // hours * minutes * seconds * milliseconds
+const daysLeft = Math.round(Math.abs((today - nextChristmas) / oneDay));
+
+// Display the number of days left until Christmas
+alert(`There are ${daysLeft} days left until Christmas.`);
+
+
+
+</script>
+</body>
+</html>
