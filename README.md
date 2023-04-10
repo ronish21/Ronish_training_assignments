@@ -1,2 +1,2 @@
-# Ronish_training_assignments
+# ronish_training_assignments
 Technical training assignments
